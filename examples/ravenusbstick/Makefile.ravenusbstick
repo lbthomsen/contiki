@@ -5,6 +5,7 @@ all: ravenusbstick
 #Do make clean when switching to remove the duplicate library modules
 CONTIKI_NO_NET=1
 CONTIKI_WITH_IPV6=0
+UIP_CONF_BUFFER_SIZE=1300
 
 CONTIKI = ../..
 

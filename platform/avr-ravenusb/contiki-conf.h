@@ -471,6 +471,10 @@ typedef unsigned short uip_stats_t;
 /* If this is zero the prefix will be manually set in contiki-raven-main.c */
 #define UIP_CONF_ROUTER_RECEIVE_RA  0
 
+#else /* UIP_CONF_IPV6_RPL */
+
+#define UIP_CONF_BUFFER_SIZE UIP_LINK_MTU + UIP_LLH_LEN
+
 #endif /* UIP_CONF_IPV6_RPL */
 
 /* ************************************************************************** */
